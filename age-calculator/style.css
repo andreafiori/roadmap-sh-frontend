@@ -1,7 +1,11 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 25%;
     gap: .5rem;
     margin: auto;
 }

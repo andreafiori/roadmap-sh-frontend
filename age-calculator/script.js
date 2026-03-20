@@ -1,11 +1,14 @@
 import { DateTime } from "./node_modules/luxon/src/luxon.js";
 
-document.getElementById('calculate-btn').addEventListener('click', () => {
+function calculateAge() {
     const inputDate = document.getElementById('datepicker').value;
 
+    const resultEl = document.getElementById('result');
+    const errorsEl = document.getElementById('errors');
+
     if (!inputDate) {
-        document.getElementById('result').innerText = '';
-        document.getElementById('errors').innerText ="Please enter a valid date.";
+        resultEl.innerText = '';
+        errorsEl.innerText ="Please enter a valid date.";
         return;
     }
 
@@ -14,14 +17,19 @@ document.getElementById('calculate-btn').addEventListener('click', () => {
     const nowDate = DateTime.now();
 
     if (birthDate > nowDate) {
-        document.getElementById('result').innerText = '';
-        document.getElementById('errors').innerText = "Birthdate cannot be in the future.";
+        resultEl.innerText = '';
+        errorsEl.innerText = "Birthdate cannot be in the future.";
         return;
     }
 
     const diff = nowDate.diff(birthDate, ['years', 'months', 'days']).toObject();
+    diff.years = Math.floor(diff.years);
+    diff.months = Math.floor(diff.months);
+    diff.days = Math.floor(diff.days);
 
-    document.getElementById('errors').innerText = ''; // Reset error message
-    document.getElementById('result').innerHTML =
-    `You are <strong>${Math.floor(diff.years)} years, ${Math.floor(diff.months)} months, and ${Math.floor(diff.days)} days</strong> old.`;
-});
+    errorsEl.innerText = ''; // Reset error message
+    resultEl.innerHTML =
+    `You are <strong>${diff.years} years, ${diff.months} months, and ${diff.days} days</strong> old.`;
+}
+
+document.getElementById('calculate-btn').addEventListener('click', calculateAge);
