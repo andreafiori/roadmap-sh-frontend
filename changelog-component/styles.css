@@ -4,6 +4,25 @@ body {
     padding: 40px;
 }
 
+.container {
+    padding: 1%;
+    border-radius: 2%;
+    border: 3px solid #333;
+    width: 60%;
+    margin: auto;
+}
+
+.changelog-title {
+    width: 110px;
+    margin: auto;
+}
+
+.changelog-subtitle {
+    width: 400px;
+    margin: auto;
+    color: #555;
+}
+
 .timeline {
     position: relative;
     max-width: 800px;
