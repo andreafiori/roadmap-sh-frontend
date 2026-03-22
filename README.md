@@ -5,6 +5,7 @@
 * [Single Page CV](./single-page-cv/)
 * [Age calculator](./age-calculator/)
 * [Changelog component](./changelog-component/)
+* [Website with JS include](./include-html/)
 
 ## References
 
