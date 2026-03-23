@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple tabbed interface using JavaScript, HTML, and CSS.">
+    <meta name="author" content="Andrea Fiori">
+    <title>Tabs with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab active" data-tab="1">First Tab</button>
+            <button class="tab" data-tab="2">Second Tab</button>
+            <button class="tab" data-tab="3">Third Tab</button>
+            <button class="tab" data-tab="4">Fourth Tab</button>
+        </div>
+        <div class="content">
+            <div id="content-1" class="tab-content active">First Tab Content</div>
+            <div id="content-2" class="tab-content">Second Tab Content</div>
+            <div id="content-3" class="tab-content">Third Tab Content</div>
+            <div id="content-4" class="tab-content">Fourth Tab Content</div>
+        </div>
+    </div>
+
+    <script src="tabs.js"></script>
+</body>
+</html>
