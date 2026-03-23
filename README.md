@@ -7,6 +7,7 @@
 * [Changelog component](./changelog-component/)
 * [Simple tabs](./simple-tabs/)
 * [Website with JS include](./include-html/)
+* [Task tracker](./task-tracker/)
 
 ## References
 
@@ -15,3 +16,4 @@
 * [Changelog component](https://roadmap.sh/projects/changelog-component)
 * [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
 * [Simple Tabs](https://roadmap.sh/projects/simple-tabs)
+* [Task tracker](https://roadmap.sh/projects/task-tracker-js)
