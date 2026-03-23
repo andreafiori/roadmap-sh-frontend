@@ -5,6 +5,7 @@
 * [Single Page CV](./single-page-cv/)
 * [Age calculator](./age-calculator/)
 * [Changelog component](./changelog-component/)
+* [Simple tabs](./simple-tabs/)
 * [Website with JS include](./include-html/)
 
 ## References
@@ -13,3 +14,4 @@
 * [Age calculator](https://roadmap.sh/projects/age-calculator)
 * [Changelog component](https://roadmap.sh/projects/changelog-component)
 * [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
+* [Simple Tabs](https://roadmap.sh/projects/simple-tabs)
