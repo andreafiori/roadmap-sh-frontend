@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta targs SEO -->
+    <meta name="description" content="Personal Portfolio Website - Roadmap Contact" />
+    <meta name="author" content="Andrea Fiori">
+    <meta name="copyright" content="Andrea Fiori">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Personal Portfolio Website - Contact</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="image/logo.png" alt="Logo">
+            <h2>Andrea Fiori</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home page">Home /</a></li>
+                <li><a href="projects.html" title="Projects list">Projects /</a></li>
+                <li><a href="articles.html" title="Read articles">Articles /</a></li>
+                <li><a href="contact.html" title="Send a message">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </div>
+        <div>
+            <form id="contactForm">
+                <div>
+                    <h2>Contact</h2>
+                    <div><label for="name">Names</label></div>
+                    <div><input type="text" name="name" id="name" placeholder="Ej. Andrea Fiori Alarcon" required></div>
+                    <div><label for="email">Email</label></div>
+                    <div><input type="email" name="email" id="email" placeholder="Ej. miguelramos@gmail.com" required></div>
+                    <div><span id="emailError">Error: Please, enter a valid email address.</span></div>
+                    <div><label for="message">Message</label></div>
+                    <div><textarea name="message" id="message" placeholder="Message" required></textarea></div>
+                    <div><input type="submit" value="Send Message"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; all rights reserved 2026</p>
+    </footer>
+
+</body>
+</html>
